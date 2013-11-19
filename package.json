@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Integrated kanban boards.",
   "license": "Apache",
-  "main": "index.js",
+  "main": "src/server.js",
   "repository": {
     "type": "git",
     "url": "git@github.com:sergeyt/kanban-vision.git"
@@ -12,11 +12,23 @@
     "kanban",
     "task-tracking"
   ],
+  "engines": {
+    "node": "~0.8 || ~0.10"
+  },
   "author": "Sergey Todyshev <stodyshev@gmail.com>",
   "contributors": [
     "Sergey Todyshev <stodyshev@gmail.com>"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "di": "0.0.1",
+    "express": "~3.4.4",
+    "socket.io": "~0.9.16",
+    "log4js": "~0.6.9",
+    "lodash": "~2.3.0",
+    "useragent": "~2.0.7",
+    "passport": "~0.1.17",
+    "passport-google": "~0.3.0"
+  },
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-jshint": "~0.7.1",
@@ -31,7 +43,7 @@
     "karma": "~0.10.4"
   },
   "scripts": {
-    "test": "./node_modules/.bin/karma start --single-run"
+    "test": "./node_modules/.bin/karma start --single-run",
+    "start": "node ./src/server.js"
   }
 }
-
