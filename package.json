@@ -33,6 +33,10 @@
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-jshint": "~0.7.1",
+    "grunt-coffeelint": "0.0.7",
+    "grunt-npm": "0.0.2",
+    "grunt-bump": "0.0.11",
+    "grunt-auto-release": "0.0.4",
     "karma-firefox-launcher": "~0.1.0",
     "karma-html2js-preprocessor": "~0.1.0",
     "karma-script-launcher": "~0.1.0",
